@@ -1,3 +1,7 @@
+import svg1 from "../../images/svg-1.svg";
+import svg2 from "../../images/svg-2.svg";
+import svg3 from "../../images/svg-3.svg";
+
 export const homeObjOne = {
   lightBg: false,
   primary: true,
@@ -10,7 +14,7 @@ export const homeObjOne = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
   headline: "Passionate Programmer",
   topLine: "Lorem Ipsum",
-  img: require("../../images/svg-1.svg"),
+  img: svg1,
   alt: "Image",
   start: "",
 };
@@ -44,24 +48,24 @@ export const homeObjThree = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
   headline: "Passionate Programmer",
   topLine: "Lorem Ipsum",
-  img: require("../../images/svg-2.svg"),
+  img: svg2,
   alt: "Image",
   start: "",
 };
 
 export const homeObjFour = {
-  lightBg: false,
-  primary: true,
-  imgStart: "",
-  lightTopLine: true,
-  lightTextDesc: true,
-  lightText: true,
+  lightBg: true,
+  primary: false,
+  imgStart: "start",
+  lightTopLine: false,
+  lightTextDesc: false,
+  lightText: false,
   buttonLabel: "Contact me",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
   headline: "Passionate Programmer",
   topLine: "Lorem Ipsum",
-  img: require("../../images/svg-3.svg"),
+  img: svg3,
   alt: "Image",
   start: "",
 };
