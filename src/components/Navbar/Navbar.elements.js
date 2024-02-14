@@ -60,7 +60,7 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 45%;
     height: 90vh;
     position: absolute;
     top: 80px;
