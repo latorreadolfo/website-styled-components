@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 160px 0;
+  padding: 230px 0;
   background: ${({ lightBg }) => (lightBg ? "#FFF" : "#101522")};
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -43,7 +47,7 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? "#E9B3C1" : "#4B59F7")};
   font-size: 18px;
-  line-height: 16px;
+  line-height: 26px;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 `;
