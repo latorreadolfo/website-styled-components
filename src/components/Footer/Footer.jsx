@@ -9,7 +9,16 @@ import {
   FooterLinksItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIcon,
+  SocialIconLink,
 } from "./Footer.elements";
+
+import { FaLinkedin, FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -29,6 +38,8 @@ const Footer = () => {
             <FooterLink to="/sign-up">Careers</FooterLink>
             <FooterLink to="/sign-up">Investors</FooterLink>
           </FooterLinksItems>
+        </FooterLinksWrapper>
+        <FooterLinksWrapper>
           <FooterLinksItems>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
             <FooterLink to="/sign-up">How it works</FooterLink>
@@ -45,6 +56,29 @@ const Footer = () => {
           </FooterLinksItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo to="/">
+            <SocialIcon />
+            JOHNSON
+          </SocialLogo>
+          <WebsiteRights>JOHNSON © 2024</WebsiteRights>
+          <SocialIcons>
+            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+              <FaLinkedin />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <FaFacebook />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="GitHub">
+              <FaGithub />
+            </SocialIconLink>
+          </SocialIcons>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   );
 };
