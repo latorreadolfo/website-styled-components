@@ -20,7 +20,10 @@ const Navbar = () => {
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setClick(false);
+  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -50,7 +53,9 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/" onClick={closeMobileMenu}>
+                  Home
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/services">Services</NavLinks>
